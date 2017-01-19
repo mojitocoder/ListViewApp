@@ -8,7 +8,13 @@ namespace ListViewApp
 		{
 			InitializeComponent();
 
-			MainPage = new ListViewAppPage();
+			var tabs = new TabbedPage { Title = "Tabbed Lists", Icon = "" };
+			tabs.Children.Add(new ListViewAppPage { Title = "Simple" });
+			tabs.Children.Add(new TextCellPage { Title = "Cell" });
+
+			MainPage = tabs;
+
+			//MainPage = new ListViewAppPage();
 		}
 
 		protected override void OnStart()

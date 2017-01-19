@@ -11,6 +11,9 @@
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)ListViewAppPage.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)TextCellPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
@@ -21,5 +24,8 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Course.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PluralSightTraining.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TextCellPage.xaml.cs">
+      <DependentUpon>TextCellPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>
