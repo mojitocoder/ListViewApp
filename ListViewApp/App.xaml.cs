@@ -10,7 +10,8 @@ namespace ListViewApp
 
 			var tabs = new TabbedPage { Title = "Tabbed Lists", Icon = "" };
 			tabs.Children.Add(new ListViewAppPage { Title = "Simple" });
-			tabs.Children.Add(new TextCellPage { Title = "Cell" });
+			tabs.Children.Add(new TextCellPage { Title = "Text" });
+			tabs.Children.Add(new CustomCellPage { Title = "Custom" });
 
 			MainPage = tabs;
 

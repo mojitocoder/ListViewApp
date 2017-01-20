@@ -14,6 +14,9 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)TextCellPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)CustomCellPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
@@ -26,6 +29,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)PluralSightTraining.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TextCellPage.xaml.cs">
       <DependentUpon>TextCellPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)CustomCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomCellPage.xaml.cs">
+      <DependentUpon>CustomCellPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 </Project>
